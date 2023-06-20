@@ -23,22 +23,28 @@ const student = [
   {id: "3", name: "raj", age: "21"},
   {id:"4",name:"hari",age:"25"}
 ];
-
+console.log("Task - 1");
 for (let key in student) {
 //     console.log(student[key].age==22)
-//   console.log(student[key].age);
+    console.log(student[key].age);
 }
-
+console.log("Display the student age above or equal to 22");
+for (let key in student) {
+    if(student[key].age>=22){
+        console.log(student[key].age);
+    }
+    }
 
 //Task-2
 
 // changing single & same letter
 
 let strName="Manikandan"
-// console.log("Change the one letter");
-// console.log(strName.replace("a","s"));
-// console.log("Change the same letter");
-// console.log(strName.replaceAll("a","s"));
+console.log("Task-2");
+console.log("Change the one letter");
+console.log(strName.replace("a","s"));
+console.log("Change the same letter");
+console.log(strName.replaceAll("a","s"));
 
 // With out method
 
@@ -50,7 +56,7 @@ for( let i=0;i<strName.length;i++){
 
 }
 
-// console.log('With out method');
+console.log('With out method');
 // console.log(strName);
 function changeletter(postion,newletter){
     const arr=strName.split('') 
@@ -64,8 +70,9 @@ function changeletter(postion,newletter){
 let pag1='are you bring your bottle'
 let pag2='yes i have a bottle'
 
-// console.log(pag1);
-// console.log(pag2);
+console.log("Task-3");
+console.log(pag1);
+console.log(pag2);
 
 pag1=pag1.split(' ')
 pag2=pag2.split(' ')
@@ -77,4 +84,3 @@ for(let i=0;i<pag1.length;i++){
         }
     }
 }
-
