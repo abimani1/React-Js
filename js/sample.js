@@ -73,7 +73,7 @@ class Car {
 
 //   OOP
 
-const person = {
+const persons = {
     firstName: "John",
     lastName: "Doe",
     id: 5566,
@@ -83,4 +83,15 @@ const person = {
     age:"29"
   };
 
-console.log(person.fullName());
+console.log(persons.fullName());
+
+const person = {
+    firstName: "Nick",
+    lastName: "Anderson",
+    age: 35,
+    sex: "M"
+  }
+  
+  const { firstName: first, age, city = "Paris" } = person;
+
+  console.log(firstName);
