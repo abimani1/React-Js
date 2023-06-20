@@ -84,7 +84,3 @@ const person = {
   };
 
 console.log(person.fullName());
-
-let x=this
-console.log(x);
-console.log(window);
