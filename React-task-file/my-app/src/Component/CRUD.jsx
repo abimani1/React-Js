@@ -46,7 +46,7 @@ const CRUD = () => {
     }
 
     useEffect(()=>{
-        show()
+        // show()
     },[])
 
     

@@ -91,11 +91,145 @@
 // Task-1 --> Api Call
 
 
-const justGet= async ()=>{
-    const response= await fetch('https://jsonplaceholder.typicode.com/posts',{method:"GET"})
-    const data= await response.json()
-    console.log(data);
-}
+// const justGet= async ()=>{
+//     const response= await fetch('https://jsonplaceholder.typicode.com/posts',{method:"GET"})
+//     const data= await response.json()
+//     console.log(data);
+// }
 
 // call the Function
-justGet()
+// justGet()
+
+// var myFunction = {
+//     Author: 'my name ',
+//     date: '15-12-2012',
+//     doSomething: function(){
+//         alert("helloworld")
+//     }
+// };
+
+
+// console.log(myFunction);
+// console.log(myFunction);
+
+// Day-4
+
+var a=[
+    {id:1},
+    {id:2},
+    {id:3},
+]
+console.log(a);
+let len=a.length
+console.log(typeof a);
+console.log(a);
+
+function circle(radius){
+    return{
+        radius,
+        draw:function(){
+            console.log('draw');
+        }
+    };
+}
+
+const cicr=circle(12)
+console.log(cicr.radius);
+cicr.draw()
+
+// Construction Function
+
+// function Circle(radius){
+//     this.radius=radius
+//     this.draw=function(){
+//         console.log('draw');
+//     }
+// }
+
+// Circle.call({},1)
+// console.log(Circle.call({},1));
+
+// let number={value:10}
+// function increase(number){
+//     number.value++;
+// }
+// increase(number)
+// increase(number)
+// increase(number)
+// increase(number)
+// increase(number)
+// increase(number)
+// increase(number)
+// increase(number)
+// increase(number)
+// increase(number)
+// console.log(number);
+// console.log(number);
+
+function retangle(radius,age){
+    this.radius=radius;
+    this.age=age
+}
+
+const Ret =new retangle(10,23);
+
+// const propertiveName='Center-location';
+// Ret[propertiveName]={proto:'sam'};
+// Ret.location={x:1};
+
+// console.log(Ret);
+// console.log(Ret.center-location);
+
+// for(let key in Ret){
+//     console.log(key);
+// }
+
+const perstion={
+    personName:'Kamal',
+    age:'23',
+    display:()=>{
+        console.log(`I am ${personName}, my age is ${age}`);
+    }
+}
+
+for(let key in perstion){
+    console.log(perstion[key]);
+}
+
+let student = {
+    id: 12,
+    name: "Isaac",
+    marks: 81,
+    setMarks: function(newMarks){
+        if(isNaN(newMarks)){
+            throw new Error(`${newMarks} is not a number`)
+        }
+       this.marks = newMarks
+    }
+}
+console.log(student.marks);
+student.setMarks(99)
+
+console.log(student.marks);
+
+/* VM563:7 Uncaught Error: Eighty Five is not a number
+    at Object.setMarks (<anonymous>:7:10)
+    at <anonymous>:1:9
+*/
+
+function squareArray(){
+    let data = [1,2,3,4,5,6]
+    function square(){
+        for(let i = 0; i<data.length;++i){
+            data[i]=data[i]*2
+        }
+        return data
+    }
+    return square;
+}
+
+let sq = squareArray()
+let squaredArray=sq()
+console.log(squaredArray)
+// [2,4,6,8,10,12]
+
