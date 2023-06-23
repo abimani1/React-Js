@@ -286,7 +286,7 @@ function person(name){
 
 const me=person('Manikandan')
 
-me.take()
+// me.take()
 
 function createElement(type,text,color){
   const el=document.createElement(type)
@@ -432,3 +432,19 @@ console.log(subclass.calculate());
 // const data=new exams('Mani',27,33,40)
 // console.log(data.totlaMark());
 // console.log(data.examGrade());
+
+// Using a constructor
+function person(first_name, last_name) {
+	return {
+    first_name,
+    last_name,
+    display(){
+      return `${this.first_name} ${this.last_name}`
+    }
+  }
+}
+// Creating new instances of person object
+let person1 = new person('Sam',' raj');
+
+console.log(person1.display());
+
