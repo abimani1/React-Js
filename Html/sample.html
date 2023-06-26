@@ -8,8 +8,21 @@
     <title>Document</title>
 </head>
 <body>
-    <p class="demo1">Hai Manikandan</p>
-    <p class="demo2"></p>
+    <p id="demo1"></p>
+    <p id="demo11"></p>
+    <p id="demo2"></p>
+    <p id="demo21"></p>
+    <script>
+        let arr=[1,2,3,4,5,6]
+        let data=arr.reduce((pre,next)=>{
+            console.log(`Pre value ${pre}`);
+            console.log(`Next value ${next}`);
+            return pre+next
+        })
+        console.log(data);
+        // console.log(json);
+    </script>
+    
     <script src="../js/sample.js"></script>
 </body>
 </html>

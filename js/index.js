@@ -249,10 +249,10 @@
 //     }
 // }
 
-const a=[]
-let n=prompt('Enter the Size of the Array')
-arrInsert(n,a)
-checkArr(a)
+// const a=[]
+// let n=prompt('Enter the Size of the Array')
+// arrInsert(n,a)
+// checkArr(a)
 
 
 function checkArr(arr){
@@ -273,4 +273,23 @@ function arrInsert(n,arr){
         arr[i]=m
     }
     return console.log(arr);
+}
+
+
+// let b=647
+// const patten=/d/
+// console.log(patten.test(b));
+
+let arr=[1,2,3,4,5]
+
+const reverse=()=>{
+for(let i=arr.length-1;i>=0;i--){
+     console.log(arr[i])
+}
+}
+// Reverseing string
+reverse()
+
+const minmumValue=()=>{
+    
 }

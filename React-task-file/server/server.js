@@ -58,13 +58,17 @@ const studentData=[
 app.use(cors());
 
 app.post(`/api/student/post`,(req,res)=>{
-    let len=studentData.length+1
-    // const{userId,StudentName,department}=req.body
+//     let len=studentData.length+1
+//     // const{userId,StudentName,department}=req.body
 
-    console.log(req.body);
-   const datast= {userId:userId,StudentName:StudentName,department:department}
-    studentData[len]=datast
-    res.send(studentData)
+//     console.log(req.body);
+//    const datast= {userId:userId,StudentName:StudentName,department:department}
+//     studentData[len]=datast
+//     res.send(studentData)
+console.log(res);
+console.log(req);
+studentData=JSON.parse(req)
+// console.log(req);
 })
 
 app.delete(`/api/student/:id`,(req,res)=>{

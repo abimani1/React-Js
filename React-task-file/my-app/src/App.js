@@ -1,12 +1,14 @@
-import './App.css';
-// import CRUD from './Component/CRUD';
-import Dynamic from './Component/Dynamic';
+// import BodyCompoent from './Component/BodyCompoent';
+import Hero from './Component/Hero';
+import NavBar from './Component/NavBar';
+import RangeData from './Component/RangeData';
 
 function App() {
   return (
     <div>
-      {/* <CRUD/> */}
-      <Dynamic/>
+      <NavBar/>
+      <Hero/>
+      <RangeData/>
     </div>
   );
 }

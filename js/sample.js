@@ -304,8 +304,8 @@ function createElement(type,text,color){
   }
 }
 
-createElement('center','Hai i am Manikandan hai','blue')
-const h2=createElement('h1','Hai i am kamal','red')
+// createElement('center','Hai i am Manikandan hai','blue')
+// const h2=createElement('h1','Hai i am kamal','red')
 
 // Higher order function --> it was the functioin call or return function eg.arrya method push,filter,ect....
 
@@ -320,22 +320,22 @@ const names=[
 // const filteredNames=names.filter(n=>n[0] =='a')
 // console.log(filteredNames);
 
-const filtered =[]
-for(let i=0;i<names.length;i++){
-  if(names[i][0]!==' '){
-    filtered.push(names[i])
-  }
-}
+// const filtered =[]
+// for(let i=0;i<names.length;i++){
+//   if(names[i][0]!==' '){
+//     filtered.push(names[i])
+//   }
+// }
 
-console.log(filtered);
+// console.log(filtered);
 
 // const element=[]
-for(let i=0;i<filtered.length;i++){
-  const el=document.createElement('p')
-  el.innerHTML=filtered[i]
-  document.body.append(el)
-  // element.push(el)
-}
+// for(let i=0;i<filtered.length;i++){
+//   const el=document.createElement('b')
+//   el.innerHTML=filtered[i]
+//   document.body.append(el)
+//   element.push(el)
+// }
 // console.log(element);
 
 // class persons{
@@ -448,3 +448,28 @@ let person1 = new person('Sam',' raj');
 
 console.log(person1.display());
 
+// let x=document.getElementById('demo').value
+// x.trim
+
+let text=" Hai mani "
+let a=text.trim()
+let len=text.length
+let len2=a.length
+document.getElementById('demo1').innerHTML=text
+document.getElementById('demo11').innerHTML=len
+document.getElementById('demo2').innerHTML=a
+document.getElementById('demo21').innerHTML=len2
+
+function playBack(name){
+  // let title=name
+  // console.log(name);
+  console.log(this);
+}
+
+// playBack.call()
+playBack.apply({name:'call Apply'})
+let newvalue=playBack.bind({name:'call Binding'})
+newvalue()
+
+let doc=document.getElementById('demo1')
+// doc.textContent
