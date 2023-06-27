@@ -6,6 +6,9 @@ const Hero = () => {
   return (
     <div className="container">
         <div className="hero-box">
+            <div className="bodyBackGround">
+                <p>hello.</p>
+            </div>
             <div className="box-1">
                 <div className="box-1-1">
                     <p>We build custom, mobile-first software designed to make your life easier<span>.</span></p>

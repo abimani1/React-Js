@@ -24,7 +24,7 @@
     row-gap: 40px;
 }
 
-.range-box-1-1 p:nth-child(1){
+.range-box-1-1 span:nth-child(1){
     font-size: 75px;
     font-weight: bold;
 }
@@ -33,4 +33,16 @@
     font-size: 30px;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
+}
+
+.num{
+    animation-delay: 1s;
+    border-bottom: 2px solid rgb(19, 175, 143);
+    border-radius: 10px;
+}
+
+@media screen and (max-width:800px) {
+    .range-box-1{
+        display: block;
+    }
 }
