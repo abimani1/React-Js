@@ -38,7 +38,7 @@
 .num{
     animation-delay: 1s;
     border-bottom: 2px solid rgb(19, 175, 143);
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 @media screen and (max-width:800px) {

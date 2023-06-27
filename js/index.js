@@ -293,3 +293,37 @@ reverse()
 const minmumValue=()=>{
     
 }
+
+
+
+function human(name){
+    return function(){
+        console.log(`Hai i am ${name}`);
+    }
+}
+
+// const a=human()
+// a.sayHai()
+// a.showYourfeeling()
+
+const a=human('manikandan')
+
+a()
+
+
+	let name = "Abhijit";
+	var sector = "Government";
+    // console.log(sector);
+	
+	{
+	let name = "Souvik";
+		
+	// as `var` is NOT block scoped(globally s
+	// coped here), it'll update the value
+	let sector = "Private";
+	console.log(name); //Souvik
+	console.log(sector); //Private
+	}
+	
+	console.log(name); //Abhijit
+	console.log(sector); //Private

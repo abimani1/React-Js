@@ -1,0 +1,12 @@
+.client-box{
+    margin-top: 200px;
+    display: grid;
+}
+
+.client-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
