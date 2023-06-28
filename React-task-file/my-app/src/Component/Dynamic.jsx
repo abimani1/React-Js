@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import axios from 'axios'
 
 const Dynamic = () => {
@@ -13,11 +13,12 @@ const Dynamic = () => {
     const [userData,setUserData]=useState(initialValue)
     const{userId,id,title,body}=userData
 
+    const callback=useCallback((res)=>{
+        setData(res.data)
+        console.log('get the data');
+    },[userData])
     const show= async()=>{
-        await axios.get('https://jsonplaceholder.typicode.com/posts').then((res)=>{
-            setData(res.data)
-            console.log(data);
-        }).catch((error)=>{
+        await axios.get('https://jsonplaceholder.typicode.com/posts').then(callback).catch((error)=>{
             console.log(error);
         })
     }

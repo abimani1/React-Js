@@ -261,7 +261,7 @@ function checkArr(arr){
             for(let j=i+1;j<arr.length;j++){
                 // console.log(a[j]);
                 if(arr[i]==arr[j]){
-                    console.log(`Answer ${arr[i]}`);
+                    // console.log(`Answer ${arr[i]}`);
                 }
             }
         }
@@ -272,7 +272,7 @@ function arrInsert(n,arr){
         let m=prompt(`Array Size ${n}. Enter the value in index ${i+1}`)
         arr[i]=m
     }
-    return console.log(arr);
+    // return console.log(arr);
 }
 
 
@@ -284,7 +284,7 @@ let arr=[1,2,3,4,5]
 
 const reverse=()=>{
 for(let i=arr.length-1;i>=0;i--){
-     console.log(arr[i])
+    //  console.log(arr[i])
 }
 }
 // Reverseing string
@@ -298,7 +298,7 @@ const minmumValue=()=>{
 
 function human(name){
     return function(){
-        console.log(`Hai i am ${name}`);
+        // console.log(`Hai i am ${name}`);
     }
 }
 
@@ -321,9 +321,49 @@ a()
 	// as `var` is NOT block scoped(globally s
 	// coped here), it'll update the value
 	let sector = "Private";
-	console.log(name); //Souvik
-	console.log(sector); //Private
+	// console.log(name); //Souvik
+	// console.log(sector); //Private
 	}
 	
-	console.log(name); //Abhijit
-	console.log(sector); //Private
+	// console.log(name); //Abhijit
+	// console.log(sector); //Private
+
+const arrs=[76,7,44,23,4]
+
+function bubbleSort(arr){
+    for (let i = 0; i < arr.length - 1; i++){
+
+        let swapped = false
+
+        for (let j = 0; j < arr.length - i - 1; j++){
+            if (arr[j] > arr[j+1]){
+                let temp = arr[j]
+                arr[j] = arr[j+1]
+                arr[j+1] = temp
+                swapped = true
+            }
+        }
+        if(!swapped) break;
+        
+    }
+
+    return arr
+}
+// console.log(bubbleSort(arrs));
+
+// Remove the dublection in array
+
+const arrRemove=[23,43,44,44,54]
+
+function findDuplication(arr){
+    for(let i=0;i<arr.length;i++){
+        for(let key in arr){
+            if(arr[i]==arr[key]){
+                arr
+            }
+        }
+        return arr
+    }
+}
+
+// console.log(findDuplication(arrRemove));
