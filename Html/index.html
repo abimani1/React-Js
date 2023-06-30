@@ -26,14 +26,27 @@
         <h1><p id="sum"></p></h1>
       </center>
     </div> -->
-    <p class="demo"></p>
+    <button type="button" onclick="load()">load</button>
+    <p id="demo"></p>
     <!-- <p id="p">Hai i am kaml</p> -->
     <script src="../js/index.js"></script>
-    <script>
+    <!-- <script>
       var p=document.querySelectorAll('p')
       var list=Array.prototype.slice.call(p)
       // console.log(p);
       // console.log(list[2]);
+    </script> -->
+    <script>
+      function load(){
+        var a=new XMLHttpRequest();
+        a.onreadystatechange=function(){
+          if(this.readyState==4 && this.status==200){
+            document.getElementById("demo").innerHTML=this.responseText;
+          }
+        };
+        a.open("GET","sampleText.txt",true);
+        a.send();
+      }
     </script>
 </body>
 </html>

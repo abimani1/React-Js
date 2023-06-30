@@ -105,3 +105,23 @@ td{
     border-radius: 10px;
     font-size: 30px;
 }
+
+.error-box{
+    display: flex;
+    justify-content: center;
+}
+
+.error-message{
+    margin-top: 200px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: red;
+}
+
+.error-status{
+    color: rgb(21, 21, 175);
+    font-size: 100px;
+}
