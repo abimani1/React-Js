@@ -8,7 +8,9 @@ const Counter = () => {
         <p>{count}</p>
         <button onClick={increment}>Increment</button>
         <button onClick={decrement}>decrement</button>
-        <button onClick={reset}>Reset</button>
+        <button onClick={reset}>Reset
+        </button>
+         
     </div>
   )
 }
