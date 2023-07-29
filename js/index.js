@@ -368,3 +368,55 @@ function findDuplication(arr){
 
 // console.log(findDuplication(arrRemove));
 
+// var m=[3,[4,2],[5],9,7]
+// for(let i=0;i<m.length;i++){
+//     if(m[i].length!==undefined){ 
+//        for(let k=0;k<m[i].length;k++){
+//         let len=i+k
+//         m[len]=m[i][k]
+//         console.log(m);
+//         // len+1
+//         lo
+//         console.log('len',len);
+//        }
+//     }
+// }
+
+// console.log(m);
+
+// const promise1 = Promise.resolve(3);
+// const promise2 = 42;
+// const promise3 = new Promise((resolve, reject) => {
+//   setTimeout(resolve, 100, 'foo');
+// });
+
+// Promise.all([promise1, promise2, promise3]).then((values) => {
+//   console.log(values);
+// });
+
+var m=undefined
+console.log(m);
+console.log(m=5);
+
+
+var id=9
+var quantity=10
+var element = {}, cart = [];
+element.id = id;
+element.quantity = quantity;
+cart.push(element);
+console.log(cart);
+
+const numbers = [1, 2, 3, 3, 3, 3, 2, 1];
+const target = 3;
+
+var i = 0;
+while (i < numbers.length) {
+  if (numbers[i] === target) {
+      numbers[i]=-1
+  } else {
+      ++i;
+  }
+}
+
+console.log(numbers); 

@@ -467,9 +467,150 @@ function playBack(name){
 }
 
 // playBack.call()
+console.log('apply ');
 playBack.apply({name:'call Apply'})
 let newvalue=playBack.bind({name:'call Binding'})
+console.log('bind');
 newvalue()
 
 let doc=document.getElementById('demo1')
 // doc.textContent
+
+
+let seaCreatures = ['whale', 'seahorse', 'shark', 'eel', 'dolphin']
+// seaCreatures.reverse()
+let k=[]
+// console.log(k.indexOf(seaCreatures[7]));
+
+let arry = ["apple", "mango",
+          "apple", "orange", "mango", "mango"];
+  
+function removeDuplicates(arr) {
+    let unique = [];
+    for (i = 0; i < arr.length; i++) {
+        if (unique.indexOf(arr[i]) === -1) {
+            unique.push(arr[i]);
+        }
+    }
+    return unique;
+}
+console.log(arry.indexOf('mango'));
+
+var p=[1,2,3,4]
+// console.log(p.reverse());
+console.log(p.reduce((next,prv)=>{
+  return next+prv
+}));
+
+
+function Rotate_and_Print(arr,d,n)
+{
+	//Initializing array temp with size n
+	var temp=new Array(n);
+	
+	let k = 0;
+
+	// Storing the n - d elements of
+	// array arr[] to the front of temp[]
+	for (let i = d; i < n; i++) {
+		temp[k] = arr[i];
+		k++;
+    // console.log(`first array ${temp}`);
+
+	}
+  // console.log(`first array ${temp}`);
+
+
+	// Storing the first d elements of array arr[]
+	// into temp
+	for (let i = 0; i < d; i++) {
+		temp[k] = arr[i];
+		k++;
+    // console.log(` ${temp}`);
+	}
+
+  console.log(`second array ${temp}`);
+	//Printing the temp array which stores the result
+	for (let i = 0; i < n; i++) {
+		console.log(temp[i]+" ");
+	}
+}
+
+
+
+
+
+
+let arrs = [  2,1, 3, 4, ];
+if(arrs!==arr.sort()){
+  console.log('it was sort');
+}
+else{
+  console.log('not sort');
+}
+let n = arrs.length;
+let d = 2; //number of times rotating the array
+Rotate_and_Print(arrs, d, n);
+
+//contributed by keerthikarathan123
+
+const maxSubArray = (nums) => {
+  // initiate two variable, maxSum for total max, sum for current max
+  let maxSum = 2
+  let valueSum=3
+  let currentSum = 0
+  // iterate through the nums, store sub-problems result
+  for(let i = 0; i < nums.length; i++){ 
+      //cumulating answers to the top
+      
+      //compare currentSum add current number 
+      //with current number and store the maximum value
+      currentSum = Math.max(nums[i], currentSum + nums[i])
+      
+      //compare maxSum with currentSum and store the greater value
+       valueSum = Math.max(currentSum, valueSum)
+      
+  }
+  return valueSum
+}
+
+console.log(maxSubArray(arrs));
+
+
+function sorted(arr){
+  let second_index;
+for(let first_index = 0; first_index < arr.length; first_index++){
+    second_index = first_index + 1;
+    if(arr[second_index] - arr[first_index] < 0) return false;
+  }
+  return true;
+}
+
+let arrm = [2,1,3,4];
+// arrm.s
+console.log('is array sorted ? ' + sorted(arrm))
+
+const numbers = [1, 2, 3, 3, 3, 3, 2, 1];
+const target = 1;
+
+var i = 0;
+while (i < numbers.length) {
+  if (numbers[i] === target) {
+      numbers.length=numbers.length-1
+  } else {
+      ++i;
+  }
+}
+
+console.log(numbers); 
+
+let j=[1,2,3,4,5]
+
+console.log(j.filter((value)=>(
+  value!==3
+  // console.log(value)
+)))
+
+const obj=[{id:1,name:'mani'}]
+let obj1=[{id:2,name:'raja'}]
+console.log(obj.concat(obj1));

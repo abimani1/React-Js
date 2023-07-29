@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box-align{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    border: 1px solid black;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-box{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.sub-box{
+}

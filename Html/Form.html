@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Form</title>
+    <style>
+        div{
+            color: white;
+            background-color: black;
+        }
+        .show{
+            visibility: visible;
+        }
+        .content{
+            /* padding: 5px; */
+            /* display: none; */
+            max-height: 0;
+            overflow: hidden;
+            background-color: white;
+            /* width: 100%; */
+            color: black;
+        }
+        .content:target{
+            max-height: 100px;
+        }
+
+        .title:hover{
+
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <center><b><p id="demo">Hello</p></b></center>
+    <div class="form-box" id="box" >
+        
+        <form name="signUp">
+            
+            <div class="form-inner-box" id="name-box">
+                <label>User Name</label>
+                <input type="text" class="input-box" name="userName" placeholder="Enter your user name">
+                <div class="error-box">
+                    <p class="error" id="error-userName"></p>
+                </div>
+            </div>
+            <div class="form-inner-box" id="email-box">
+                <label>Email</label>
+                <input type="mail" class="input-box" name="email" placeholder="Enter your Email">
+                <div class="error-box">
+                    <p class="error" id="error-email"></p>
+                </div>
+            </div>
+            <div class="form-inner-box" id="password-box">
+                <label>Password</label>
+                <input type="password" class="input-box" name="password" placeholder="Enter your Password">
+                <div class="error-box">
+                    <p class="error" id="error-password"></p>
+                </div>
+            </div>
+            <div class="sub-but">
+                <input type="button" id="submit-but" value="submit">
+            </div>
+        </form>
+    </div>
+    <!-- <div style="display: flex;row-gap: 20px;background-color: red; width: 300px;padding: 20px;">
+        <button style="width: 100px;background-color: blue;color: white;">button1</button>
+        <button style="width: 100px;background-color: blue;color: white;">button2</button>
+        <button style="width: 100px;background-color: blue;color: white;">button3</button>
+    </div> -->
+
+    <!-- <div><div class="title"><a href="#t1" style="margin: 0;">1</a></div>
+        <div id="t1" class="content" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro blanditiis dolorem ipsam sint cum quae fugiat reiciendis illo eligendi! Eum, magni beatae. Quisquam eos sed eligendi assumenda sequi ducimus itaque!</div>
+    </div>
+
+    <div>
+        <a href="#t2" style="margin: 0;">2</a>
+        <div id="t2" class="content" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro blanditiis dolorem ipsam sint cum quae fugiat reiciendis illo eligendi! Eum, magni beatae. Quisquam eos sed eligendi assumenda sequi ducimus itaque!</div>
+    </div>
+
+    <div>
+        <div class="title"><a href="#t3" style="margin: 0;">3</a></div>
+        <div id="#t3" class="content" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro blanditiis dolorem ipsam sint cum quae fugiat reiciendis illo eligendi! Eum, magni beatae. Quisquam eos sed eligendi assumenda sequi ducimus itaque!</div>
+    </div> -->
+
+
+    <script src="../js/form.js"></script>
+</body>
+</html>
