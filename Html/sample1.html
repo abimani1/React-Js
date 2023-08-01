@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            row-gap: 10px;
+        }
+        .inner-box{
+            width: 100%;
+            font-weight: bolder;
+            text-align: center;
+            /* height: 50px; */
+            background-color: aqua;
+        }
+        .inner-box-item{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .inner-chlid{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="contioner">
+        <div class="row">
+            <div class="box">
+                <div class="inner-box">
+                    <p>Header</p>
+                </div>
+                <div class="inner-box">
+                    <div class="inner-box-item">
+                        <div class="inner-chlid">
+                            <p>ad1</p>
+                        </div>
+                        <div class="inner-chlid">
+                            <p>ad2</p>
+                        </div>
+                        <div class="inner-chlid">
+                            <p>ad3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-box">
+                    <p>Fooder</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

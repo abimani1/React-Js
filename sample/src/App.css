@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+
+.border{
+  border: 2px solid;
+  background-color: #61dafb;
+}
+
+.ligth{
+  width: 400px;
+  height: 300px;
+  color: black;
+  text-align: center;
+  background-color: white;
+}
+
+.dark{
+  width: 400px;
+  height: 300px;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+.Link{
+  list-style: none;
+  text-decoration: none;
+  color:white;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: green;
+}
+.active{
+  background-color: blue;
+}

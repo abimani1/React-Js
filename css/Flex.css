@@ -12,12 +12,16 @@
     border: 1px solid black;
     width: 500px;
     height: 200px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 150px 50px 50px;
+    column-gap: 20px;
     align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .sub-box{
     padding: 10px;
+    text-align: center;
     border: 1px solid black;
 }

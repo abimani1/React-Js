@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar{
+    padding: 20px;
+    background-color: rgba(24, 216, 226, 0.879);
+}
+
+.nav-logo{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(252, 252, 252);
+}
+.nav-logo p span{
+    font-size: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    border-radius: 100%;
+    background-color: green;
+}
+
+.nav-menu-link{
+    margin-top: 10px;
+    display: flex;
+    column-gap: 20px;
+    list-style: none;
+}
+
+.nav-menu-link li{
+    text-transform: uppercase;
+    font-weight: bold;
+    color:rgb(152, 39, 39)
+}
+
+.nav-button button{
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    border: none;
+    width: 80px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+a:active{
+    color: black;
+}

@@ -7,22 +7,23 @@ const Deital = () => {
     const id=useParams()
 
     const[data,setData]=useState()
-    console.log(id);
+
+
     useEffect(()=>{
         axios.get(`https://dummyjson.com/products/${id.id}`).then((res)=>{
-            console.log(res.data);
             setData(res.data)
         }).catch((err)=>{
             console.log(err);
         })
     },[])
+    console.log('useState',data);
   return (
     <div>
-       {data.images ?  <div>
-            <img src={data.images[0]} alt="" srcset="" />
+       {!data ? <><h1>loading</h1></>:<div>
+            <img src={data.images[0]} alt="img"/>
             <p>name {data.title}</p>
             <p>price {data.price}</p>
-        </div> : <></>}
+        </div> }
     </div>
   )
 }
